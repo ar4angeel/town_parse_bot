@@ -21,5 +21,4 @@ def search_name_by_tr(number):
 numbere = input()
 search_name_by_tr(int(numbere))
 
-class Structure:
-    def init(self):
+
