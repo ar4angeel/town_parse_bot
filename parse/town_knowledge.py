@@ -19,8 +19,9 @@ def search_name_by_tr(number):
 
 
 def new_record():
-    for data in range(1,75):
-        Towns.create(count= data)
+    for data in range(0,75):
+        Towns.insert(count= data).execute()
 
+new_record()
 
 
