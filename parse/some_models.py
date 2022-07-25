@@ -9,5 +9,11 @@ class Towns(Model):
     OKATO = IntegerField()
     population = IntegerField()
     year_foundation = IntegerField()
-    asignment_sity = IntegerField()
-    icon =
+    assignment_sity = IntegerField()
+    icon = CharField()
+
+    class Meta:
+        database = db
+
+
+Towns.create_table()

@@ -1,6 +1,6 @@
 import requests
 from bs4 import *
-
+from some_models import Towns
 
 html_wiki_towns = requests.get('https://ru.wikipedia.org/wiki/Городские_населённые_пункты_Московской_области')
 r_html_towns = html_wiki_towns.text
@@ -15,10 +15,12 @@ b = a[0:223:3]
 
 def search_name_by_tr(number):
     a = b[number].find_previous(('tr'))
-    c = a.find_all('a')
-    print(c)
+    print(a)
 
-numbere = input()
-search_name_by_tr(int(numbere))
+
+def new_record():
+    for data in range(1,75):
+        Towns.create(count= data)
+
 
 
