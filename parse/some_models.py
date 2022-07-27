@@ -6,11 +6,10 @@ class Towns(Model):
     count = IntegerField()
     town = CharField()
     district = CharField()
-    OKATO = IntegerField()
-    population = IntegerField()
-    year_foundation = IntegerField()
-    assignment_sity = IntegerField()
-    icon = CharField()
+    okato = CharField()
+    population = CharField()
+    year_foundation = CharField()
+    assignment_sity = CharField()
 
     class Meta:
         database = db
